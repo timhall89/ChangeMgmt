@@ -10,7 +10,7 @@ namespace ChangeMgmt.Common
         {
         }
 
-        public byte[] GetSHA256(string text)
+        public static byte[] GetSHA256(string text)
         {
             using (SHA256 sHA256 = SHA256.Create())
             {
