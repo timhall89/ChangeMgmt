@@ -6,6 +6,7 @@ namespace ChangeMgmt.Data.DataInterface.SqlServer
 {
     using Microsoft.EntityFrameworkCore;
     using Models.SqlServerDB.Entities;
+    using Common;
 
     public class SqlServerWrapper : ChangeMgmtContext, IDataWrapper
     {
@@ -30,6 +31,22 @@ namespace ChangeMgmt.Data.DataInterface.SqlServer
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured) optionsBuilder.UseSqlServer(connString);
+        }
+
+        public void AddUser(string Email, string FirstName, string LastName, string Password) =>
+            AddUser(Email, FirstName, LastName, Cryptography.GetSHA256(Password));
+
+        public void AddUser(string Email, string FirstName, string LastName, byte[] Password)
+        {
+            User.Add(new User()
+            {
+                Email = Email,
+                FirstName = FirstName,
+                LastName = LastName,
+                Password = Password
+            });
+
+            SaveChanges();
         }
     }
 }

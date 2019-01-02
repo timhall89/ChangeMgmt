@@ -7,6 +7,16 @@ namespace ChangeMgmt.Data.DataInterface.Dummy
         {
         }
 
+        public void AddUser(string Email, string FirstName, string LastName, string Password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddUser(string Email, string FirstName, string LastName, byte[] Password)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool IsPasswordValid(string email, string password)
         {
             throw new NotImplementedException();
