@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayGround", "PlayGround\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Tests", "ChangeMgmt.Tests\ChangeMgmt.Tests.csproj", "{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.WebAPI", "ChangeMgmt.WebAPI\ChangeMgmt.WebAPI.csproj", "{F06787B9-6B26-4629-A99E-6300FCE11F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
