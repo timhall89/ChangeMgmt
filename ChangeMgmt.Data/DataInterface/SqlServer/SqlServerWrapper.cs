@@ -14,11 +14,9 @@ namespace ChangeMgmt.Data.DataInterface.SqlServer
 
         public SqlServerWrapper(string connString) =>
             this.connString = connString;
-       
-        public bool IsPasswordValid(string email, string password)
-        {
-            return true;
-        }
+
+        public bool IsPasswordValid(string email, string password) =>
+            IsPasswordValid(email, Cryptography.GetSHA256(password));
 
         public bool IsPasswordValid(string email, byte[] password)
         {
