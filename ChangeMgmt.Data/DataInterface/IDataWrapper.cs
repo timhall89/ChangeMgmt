@@ -5,5 +5,7 @@ namespace ChangeMgmt.Data.DataInterface
     {
         bool IsPasswordValid(string email, string password);
         bool IsPasswordValid(string email, byte[] password);
+
+        void AddUser(string Email, string FirstName, string LastName, string Password);
     }
 }
