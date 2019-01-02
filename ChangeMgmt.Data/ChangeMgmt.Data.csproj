@@ -7,7 +7,7 @@
   <ItemGroup>
     <Folder Include="DataInterface\" />
     <Folder Include="DataInterface\SqlServer\" />
-    <Folder Include="DataInterface\Test\" />
+    <Folder Include="DataInterface\Dummy\" />
     <Folder Include="Models\" />
     <Folder Include="Models\SqlServerDB\" />
     <Folder Include="Models\SqlServerDB\Entities\" />
