@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
+
 namespace ChangeMgmt.Common
 {
     public class Cryptography
@@ -7,9 +10,12 @@ namespace ChangeMgmt.Common
         {
         }
 
-        public byte[] SHA265(string text)
+        public byte[] GetSHA256(string text)
         {
-            return new byte[32];
+            using (SHA256 sHA256 = SHA256.Create())
+            {
+                return sHA256.ComputeHash(Encoding.ASCII.GetBytes(text));
+            }
         }
     }
 }
