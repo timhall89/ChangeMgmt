@@ -21,7 +21,7 @@ namespace ChangeMgmt.Data.DataInterface.SqlServer
         public bool IsPasswordValid(string email, byte[] password)
         {
             List<User> list = User.Where(u => u.Email == email).ToList();
-            if (!list.Any()) throw new KeyNotFoundException($"No user exists with email {email}");
+            if (!list.Any()) throw new ArgumentException($"No user exists with email {email}");
 
             return list.Any(u => u.Password == password);
         }
