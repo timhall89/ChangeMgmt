@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Data", "ChangeMg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Common", "ChangeMgmt.Common\ChangeMgmt.Common.csproj", "{CF8214B9-DCF5-4ACC-960A-15D1DCD9D82D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A46CB432-1462-4529-9521-214C8F2A839C}"
+	ProjectSection(SolutionItems) = preProject
+		.README = .README
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
