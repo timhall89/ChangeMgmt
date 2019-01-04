@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace ChangeMgmt.BusinessLogic.Helpers
 {
-    using Common.DTO;
+    using Common.DTOInterfaces;
     public class LoginHelper
     {
-        public bool IsUserPasswordCorrect(IEnumerable<UserNamePasswordPair> DataSet, UserNamePasswordPair User)
+        public bool IsUserPasswordCorrect(IEnumerable<IUserNameAndPassword> DataSet, IUserNameAndPassword User)
         {
-            List<string> PasswordsForUserName = DataSet.Where(DataSetUser => DataSetUser.UserName == User.UserName)
+            List<byte[]> PasswordsForUserName = DataSet.Where(DataSetUser => DataSetUser.UserName == User.UserName)
                 .Select(DataSetUser => DataSetUser.Password)
                 .ToList();
 
