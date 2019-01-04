@@ -8,7 +8,7 @@ namespace ChangeMgmt.BusinessLogic.Helpers
     using Common.DTOInterfaces;
     public class LoginHelper
     {
-        public bool IsUserPasswordCorrect(IEnumerable<IUserNameAndPassword> DataSet, IUserNameAndPassword User)
+        public static bool IsUserPasswordCorrect(IEnumerable<IUserNameAndPassword> DataSet, IUserNameAndPassword User)
         {
             List<byte[]> PasswordsForUserName = DataSet.Where(DataSetUser => DataSetUser.UserName == User.UserName)
                 .Select(DataSetUser => DataSetUser.Password)
