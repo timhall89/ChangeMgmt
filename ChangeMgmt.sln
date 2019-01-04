@@ -1,20 +1,23 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Data", "ChangeMgmt.Data\ChangeMgmt.Data.csproj", "{424F7189-D979-44C2-9B7E-B2600FAB3225}"
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeMgmt.Data", "ChangeMgmt.Data\ChangeMgmt.Data.csproj", "{424F7189-D979-44C2-9B7E-B2600FAB3225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Common", "ChangeMgmt.Common\ChangeMgmt.Common.csproj", "{CF8214B9-DCF5-4ACC-960A-15D1DCD9D82D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeMgmt.Common", "ChangeMgmt.Common\ChangeMgmt.Common.csproj", "{CF8214B9-DCF5-4ACC-960A-15D1DCD9D82D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A46CB432-1462-4529-9521-214C8F2A839C}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayGround", "PlayGround\PlayGround.csproj", "{296D9D91-1782-4155-91E9-CE2CB03FBB12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayGround", "PlayGround\PlayGround.csproj", "{296D9D91-1782-4155-91E9-CE2CB03FBB12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.Tests", "ChangeMgmt.Tests\ChangeMgmt.Tests.csproj", "{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeMgmt.Tests", "ChangeMgmt.Tests\ChangeMgmt.Tests.csproj", "{2FFBEA73-E4AD-45FB-95EB-BDD4F66D7BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.WebAPI", "ChangeMgmt.WebAPI\ChangeMgmt.WebAPI.csproj", "{F06787B9-6B26-4629-A99E-6300FCE11F8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeMgmt.WebAPI", "ChangeMgmt.WebAPI\ChangeMgmt.WebAPI.csproj", "{F06787B9-6B26-4629-A99E-6300FCE11F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeMgmt.BusinessLogic", "ChangeMgmt.BusinessLogic\ChangeMgmt.BusinessLogic.csproj", "{6EB13354-0F04-43A7-9B3C-E7E5304F972A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +45,15 @@ Global
 		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06787B9-6B26-4629-A99E-6300FCE11F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB13354-0F04-43A7-9B3C-E7E5304F972A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB13354-0F04-43A7-9B3C-E7E5304F972A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB13354-0F04-43A7-9B3C-E7E5304F972A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB13354-0F04-43A7-9B3C-E7E5304F972A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB2B7B12-0393-4555-A3BC-020ED363BE72}
 	EndGlobalSection
 EndGlobal
