@@ -7,6 +7,6 @@ namespace ChangeMgmt.Common.DataWrapper
     using DTOInterfaces;
     public interface IDataWrapper
     {
-        IEnumerable<IUserNameAndPassword> GetUserNamesAndPasswords();
+        IEnumerable<IUserNameAndPassword> UserNamesAndPasswords { get; }
     }
 }
