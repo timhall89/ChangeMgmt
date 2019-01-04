@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
-
+//This is the comment from github
 namespace ChangeMgmt.Tests
 {
     using BusinessLogic.Helpers;
