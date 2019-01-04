@@ -30,7 +30,7 @@ namespace ChangeMgmt.Tests
         [Fact]
         public void UserDoesNotExist()
         {
-            User user = new User("Tim", "password1");
+            User user = new User("Timothy", "password1");
 
             Exception ex = Assert.Throws<ArgumentException>(() => LoginHelper.IsUserPasswordCorrect(new DummyDataWrapper().UserNamesAndPasswords, user));
             Assert.Equal($"No user exists with user name {user.UserName}", ex.Message);
