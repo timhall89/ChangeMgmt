@@ -9,10 +9,10 @@ namespace ChangeMgmt.Common.DataWrapper.Wrappers
     public class DummyDataWrapper : IDataWrapper
     {
         public IEnumerable<IUserNameAndPassword> UserNamesAndPasswords
-            => new List<User> {
-                new User("Tim", "password1"),
-                new User("Abi", "Password2"),
-                new User("John", "Super")
+            => new List<UserDTO> {
+                new UserDTO("Tim", "password1"),
+                new UserDTO("Abi", "Password2"),
+                new UserDTO("John", "Super")
             };
         
     }
