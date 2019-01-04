@@ -16,7 +16,7 @@ namespace ChangeMgmt.BusinessLogic.Helpers
 
             if (!PasswordsForUserName.Any()) throw new ArgumentException($"No user exists with user name {User.UserName}");
 
-            return PasswordsForUserName.Any(pw => pw == User.Password);
+            return PasswordsForUserName.Any(pw => pw.SequenceEqual(User.Password));
         }
     }
 }
