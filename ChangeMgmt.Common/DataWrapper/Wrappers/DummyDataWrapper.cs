@@ -9,8 +9,11 @@ namespace ChangeMgmt.Common.DataWrapper.Wrappers
     public class DummyDataWrapper : IDataWrapper
     {
         public IEnumerable<IUserNameAndPassword> GetUserNamesAndPasswords()
-        {
-            return new List<User> { new User("Tim", "password1")}
-        }
+            => new List<User> {
+                new User("Tim", "password1"),
+                new User("Abi", "Password2"),
+                new User("John", "Super")
+            };
+        
     }
 }
