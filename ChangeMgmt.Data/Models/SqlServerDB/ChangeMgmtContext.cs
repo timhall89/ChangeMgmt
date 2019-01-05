@@ -19,7 +19,6 @@ namespace ChangeMgmt.Data.Models.SqlServerDB.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
