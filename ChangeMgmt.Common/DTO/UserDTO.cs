@@ -7,17 +7,7 @@ namespace ChangeMgmt.Common.DTO
     using DTOInterfaces;
     public class UserDTO : IUserNameAndPassword                
     {
-        public UserDTO(string UserName, string Password) : this(UserName, Cryptography.GetSHA256(Password))
-        {
-
-        }
-        
-        public UserDTO(string UserName, byte[] Password)
-        {
-            this.UserName = UserName;
-            this.Password = Password;
-        }
-        public string UserName { get; }
-        public byte[] Password { get; }
+        public string UserName { get; set; }
+        public byte[] Password { get; set; }
     }
 }

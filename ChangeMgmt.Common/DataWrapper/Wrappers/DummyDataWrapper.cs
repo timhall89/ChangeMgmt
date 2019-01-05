@@ -10,9 +10,9 @@ namespace ChangeMgmt.Common.DataWrapper.Wrappers
     {
         public IEnumerable<IUserNameAndPassword> UserNamesAndPasswords
             => new List<UserDTO> {
-                new UserDTO("Tim", "password1"),
-                new UserDTO("Abi", "Password2"),
-                new UserDTO("John", "Super")
+                new UserDTO() {UserName = "Tim", Password = Cryptography.GetSHA256("password1") },
+                new UserDTO() {UserName="Abi",Password = Cryptography.GetSHA256( "Password2") },
+                new UserDTO() {UserName = "John",Password = Cryptography.GetSHA256("Super") }
             };
         
     }
