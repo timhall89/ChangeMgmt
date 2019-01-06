@@ -1,5 +1,7 @@
 ﻿using System;
-namespace ChangeMgmt.Data.DataWrapper.Dummy
+using ChangeMgmt.Common.DTOInterfaces;
+
+namespace ChangeMgmt.Data.DataWrapper
 {
     public class DummyDataWrapper : IDataWrapper
     {
@@ -7,22 +9,7 @@ namespace ChangeMgmt.Data.DataWrapper.Dummy
         {
         }
 
-        public void AddUser(string Email, string FirstName, string LastName, string Password)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AddUser(string Email, string FirstName, string LastName, byte[] Password)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool IsPasswordValid(string email, string password)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool IsPasswordValid(string email, byte[] password)
+        public bool IsPasswordValid(IUserNameAndPassword User)
         {
             throw new NotImplementedException();
         }
