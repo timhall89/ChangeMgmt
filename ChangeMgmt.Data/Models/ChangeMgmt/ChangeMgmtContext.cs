@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ChangeMgmt.Data.Models.SqlServerDB.Entities
+namespace ChangeMgmt.Data.Models.ChangeMgmt
 {
     public partial class ChangeMgmtContext : DbContext
     {
@@ -19,6 +19,11 @@ namespace ChangeMgmt.Data.Models.SqlServerDB.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=localhost;Database=ChangeMgmt;User Id=sa;Password=D0ck3r5QL53rv3r;");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ChangeMgmt.Data.Models.SqlServerDB.Entities
+namespace ChangeMgmt.Data.Models.ChangeMgmt
 {
     public partial class User
     {
