@@ -1,10 +1,19 @@
 ﻿using System;
 namespace ChangeMgmt.Data.Models
 {
-    public class ChangeMgmtDB
+    using ChangeMgmt;
+    using Microsoft.EntityFrameworkCore;
+
+    public class ChangeMgmtDB : ChangeMgmtContext
     {
-        public ChangeMgmtDB()
+        private string connString { get;}
+
+        public ChangeMgmtDB(string connString) =>
+            this.connString = connString;
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (!optionsBuilder.IsConfigured) optionsBuilder.UseSqlServer(connString);
         }
     }
 }
