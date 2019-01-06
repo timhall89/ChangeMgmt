@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ChangeMgmt.Common.DTOInterfaces
 {
-    public interface IUserNameAndPassword
+    public interface IEmailAndPassword
     {
-        string UserName { get; }
+        string Email { get; }
         byte[] Password { get; }
     }
 }

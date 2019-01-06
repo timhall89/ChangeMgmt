@@ -9,7 +9,7 @@ namespace ChangeMgmt.Data.DataWrapper
         {
         }
 
-        public bool IsPasswordValid(IUserNameAndPassword User)
+        public bool IsPasswordValid(IEmailAndPassword User)
         {
             throw new NotImplementedException();
         }
