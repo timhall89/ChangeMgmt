@@ -4,7 +4,10 @@ namespace ChangeMgmt.Data.DataWrapper
 {
     using System.Collections.Generic;
     using System.Linq;
+    using ChangeMgmt.Common.DTOInterfaces;
     using Models;
+    using Models.ChangeMgmt;
+
     public class ChangeMgmtDBWrapper : ChangeMgmtDB, IDataWrapper
     {
         public ChangeMgmtDBWrapper(string connString) : base(connString)
@@ -30,6 +33,14 @@ namespace ChangeMgmt.Data.DataWrapper
             });
 
             SaveChanges();
+        }
+
+        public bool IsPasswordValid(IEmailAndPassword User)
+        {
+            List<User> list = this.User.Where(u => u.Email == User.Email).ToList();
+            if (!list.Any()) throw new ArgumentException($"No user exists with email {User.Email}");
+
+            return list.Any(u => u.Password == User.Password);
         }
     }
 }
