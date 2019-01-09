@@ -3,18 +3,16 @@ using System.Collections.Generic;
 
 namespace ChangeMgmt.Data.Models.ChangeMgmt
 {
-    public partial class User
+    public partial class UserActivity
     {
-        public User()
+        public UserActivity()
         {
             UserActivityCompletion = new HashSet<UserActivityCompletion>();
         }
 
-        public int UserId { get; set; }
-        public string Email { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public byte[] Password { get; set; }
+        public int ActivityId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
 
         public virtual ICollection<UserActivityCompletion> UserActivityCompletion { get; set; }
     }
